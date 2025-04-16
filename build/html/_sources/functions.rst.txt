@@ -5,6 +5,9 @@ WORK IN PROGRESS
 
 .. automethod:: PythonWrapperToolkit.SIR3S_Model.StartTransaction
 
+.. note::
+    All other functions will follow soon.
+
 User Manual
 -----------
 

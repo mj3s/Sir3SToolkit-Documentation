@@ -10,6 +10,7 @@
       <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
 
   
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -52,12 +53,12 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#why-is-the-toolkit-valuable-when-working-with-sir-3s">Why is the Toolkit valuable when Working with SIR 3S</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#install-toolkit">Install Toolkit</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#user-manual">User Manual</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functions.html">Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="releases.html">Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developers.html">For Developers</a></li>
 </ul>
 
         </div>
@@ -88,7 +89,7 @@
 <h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this heading"></a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This is a preliminary shortened draft of a documentation for the SIR 3S Toolkit. In the future, we hope to offer a separate documentation for the Toolkit just as complete and user-friendly as the current PT3S version or maybe something better. Also important to note is that the Toolkit is not publicly available yet and therefore this documentation is just a guideline for people with access.</p>
+<p>This documentation is still WORK IN PROGRESS.</p>
 </div>
 <p>Welcome to the Getting Started guide for the SIR 3S Toolkit! This guide is your first step towards understanding and utilizing the Toolkit. The purpose of the Toolkit and its applications will be explained.</p>
 <section id="why-is-the-toolkit-valuable-when-working-with-sir-3s">
@@ -104,36 +105,29 @@
 </div>
 <p>To install the Toolkit, follow these steps:</p>
 <ol class="arabic">
-<li><p><strong>Install SIR 3S Version with Python Compatibility</strong>: Copy <cite>S:/Softwareentwicklung/SIR 3S/Sir3S-90/Release_Intern/2024-11-26_Release_Quebec(Alpha)/SirCalc-90-15-00-12_Quebec.alpha_x64.zip</cite> and <cite>S:/Softwareentwicklung/SIR 3S/Sir3S-90/Release_Intern/2024-11-26_Release_Quebec(Alpha)/SirGraf-90-15-00-04x64.ZIP</cite> to your local machine preferably to <cite>C:/3S/SIR 3S Entwicklung</cite></p></li>
+<li><p><strong>Get SIR 3S Version with Python Compatibility</strong>: Copy <code class="docutils literal notranslate"><span class="pre">S:/Softwareentwicklung/SIR</span> <span class="pre">3S/Sir3S-90/Release_Intern/2024-11-26_Release_Quebec(Alpha)/SirCalc-90-15-00-12_Quebec.alpha_x64.zip</span></code> and <code class="docutils literal notranslate"><span class="pre">S:/Softwareentwicklung/SIR</span> <span class="pre">3S/Sir3S-90/Release_Intern/2024-11-26_Release_Quebec(Alpha)/SirGraf-90-15-00-06x64.ZIP</span></code> to your local machine preferably to <code class="docutils literal notranslate"><span class="pre">C:/3S/SIR</span> <span class="pre">3S</span> <span class="pre">Entwicklung</span></code>.</p></li>
 <li><p><strong>Unpack .zip files</strong>: Unpack both zip-folders.</p></li>
-<li><p><strong>Get Common directory for SIR 3S 90</strong>: Copy <cite>S:/Softwareentwicklung/SIR 3S/Sir3S-90/Common</cite> to <cite>C:/3S/SIR 3S Entwicklung</cite></p></li>
-<li><p><strong>Get License for SIR 3S 90</strong>: Copy <cite>SIR3S-90.LIC</cite> from <cite>T:/SCRATCH/Jablonski</cite> to <cite>C:/3S/SIR 3S Entwicklung/Common</cite></p></li>
-<li><p><strong>Get Toolkit dll</strong>: Copy <cite>Sir3S_Toolkit.dll</cite> from <cite>T:/SCRATCH/Jablonski</cite> to the <cite>C:/3S/SIR 3S Entwicklung/SirGraf-90-15-00-04x64</cite> directory in the new SIR 3S Installation</p></li>
-<li><p><strong>Upgrade pip and install numpy</strong>: Open a cmd and enter the following commands.</p>
+<li><p><strong>Get Common folder with Python for new SIR 3S Version</strong>: Copy <code class="docutils literal notranslate"><span class="pre">S:/Softwareentwicklung/SIR</span> <span class="pre">3S/Sir3S-90/Common</span></code> to your local machine preferably to <code class="docutils literal notranslate"><span class="pre">C:/3S/SIR</span> <span class="pre">3S</span> <span class="pre">Entwicklung</span></code>.</p></li>
+<li><p><strong>Unpack .zip files</strong>: Unpack the python zip folder in the Common folder. Make sure that <code class="docutils literal notranslate"><span class="pre">C:/3S/SIR</span> <span class="pre">3S</span> <span class="pre">Entwicklung/Common/Python312/python.exe</span></code> exists.</p></li>
+<li><p><strong>Get License for SIR 3S 90</strong>: Copy <code class="docutils literal notranslate"><span class="pre">SIR3S-90.LIC</span></code> from <code class="docutils literal notranslate"><span class="pre">T:/SCRATCH/Jablonski</span></code> to <code class="docutils literal notranslate"><span class="pre">C:/3S/SIR</span> <span class="pre">3S</span> <span class="pre">Entwicklung/Common</span></code>.</p></li>
+<li><p><strong>Upgrade pip and install numpy</strong>: Open a cmd and enter the following commands:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;C:/3S/SIR 3S Entwicklung/SirGraf-90-15-00-04x64/Python312&quot;</span>
-pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
-pip<span class="w"> </span>install<span class="w"> </span>numpy
+<span class="c1">#python.exe -m pip install --upgrade pip (if needed)</span>
+python.exe<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>numpy
 </pre></div>
 </div>
 </li>
-<li><p><strong>Get Current Work Package</strong>: Copy the most recent work package version from <cite>T:/SCRATCH/Nischal/Work_Packages/Toolkit_WorkPackage</cite> to <cite>C:/Users/User/3S</cite> and rename it to <cite>Toolkit_WorkPackage</cite> (for uniformity and practicality)</p></li>
-<li><p><strong>Install Toolkit in editable mode:</strong> Open a cmd and enter the following commands.</p>
+<li><p><strong>Get Current Toolkit Version</strong>: Copy the most recent version from <code class="docutils literal notranslate"><span class="pre">T:/SCRATCH/PythonToolkit</span></code> to <code class="docutils literal notranslate"><span class="pre">C:/Users/User/3S</span></code> and rename it to <code class="docutils literal notranslate"><span class="pre">Toolkit_WorkPackage</span></code> (for uniformity and practicality).</p></li>
+<li><p><strong>Move dlls</strong>: Copy files from <code class="docutils literal notranslate"><span class="pre">C:/Users/User/3S/Toolkit_WorkPackage/DLLs</span></code> to <code class="docutils literal notranslate"><span class="pre">C:/3S/SIR</span> <span class="pre">3S</span> <span class="pre">Entwicklung/SirGraf-90-15-00-06x64</span></code>.</p></li>
+<li><p><strong>Install Toolkit in editable mode:</strong> Open a cmd and enter the following commands:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;C:/3S/SIR 3S Entwicklung/SirGraf-90-15-00-04x64/Python312&quot;</span>
 python.exe<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;C:/Users/User/3S/Toolkit_WorkPackage&quot;</span>
 </pre></div>
 </div>
 </li>
-<li><p><strong>Edit config.txt file:</strong> Open <cite>C:/Users/jablonski/3S/Toolkit_WorkPackage/PythonWrapperToolkit/Config.txt</cite> and change the content to <cite>C:/3S/SIR 3S Entwicklung/SirGraf-90-15-00-04x64</cite></p></li>
+<li><p><strong>Edit config.txt file:</strong> Open <code class="docutils literal notranslate"><span class="pre">C:/Users/jablonski/3S/Toolkit_WorkPackage/PythonWrapperToolkit/Config.txt</span></code> and change the content to <code class="docutils literal notranslate"><span class="pre">C:/3S/SIR</span> <span class="pre">3S</span> <span class="pre">Entwicklung/SirGraf-90-15-00-04x64</span></code>.</p></li>
 </ol>
-<p>Now you should be good to go to use the Toolkit in the Python Console in your new SirGraf installation, but be aware that if you want to use the Toolkit in another python environment, you will have to install it there in editable mode as well.</p>
-</section>
-<section id="user-manual">
-<h2>User Manual<a class="headerlink" href="#user-manual" title="Permalink to this heading"></a></h2>
-<p>To get a general understanding of how the Toolkit works and get an overview of the provided functions, refer to the following pdf.</p>
-<a href="TOOLKIT_USER_MANUAL.pdf">Open PDF</a>
-<br><div class="line-block">
-<div class="line"><br /></div>
-</div>
+<p>Now you should be good to go to use the Toolkit in the Python Console in your new SirGraf installation. Be aware that if you want to use the Toolkit in another Python environment, you will have to install it there in editable mode as well.</p>
 </section>
 </section>
 
