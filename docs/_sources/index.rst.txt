@@ -7,10 +7,12 @@ Welcome to Sir3SToolkit's documentation!
 ========================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 3
 
    started
+   examples
+   functions
+   releases
    
 Indices and tables
 ==================
