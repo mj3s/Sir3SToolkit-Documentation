@@ -12,8 +12,20 @@
 import os
 import sys
 from datetime import datetime
-sys.path.insert(0, os.path.abspath(r'C:\Users\jablonski\3S\Toolkit_WorkPackage\PythonWrapperToolkit'))
-sys.path.insert(0, os.path.abspath(r'C:\Users\jablonski\3S\Sir3SToolkit Documentation\source'))
+
+# Get the directory of the current script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Construct relative paths
+toolkit_path = os.path.join(script_dir, '..', 'Toolkit_WorkPackage', 'PythonWrapperToolkit')
+docs_source_path = os.path.join(script_dir, '..', 'Sir3SToolkit Documentation', 'source')
+
+# Insert relative paths into sys.path
+sys.path.insert(0, os.path.abspath(toolkit_path))
+sys.path.insert(0, os.path.abspath(docs_source_path))
+
+#sys.path.insert(0, os.path.abspath(r'C:\Users\jablonski\3S\Toolkit_WorkPackage\PythonWrapperToolkit'))
+#sys.path.insert(0, os.path.abspath(r'C:\Users\jablonski\3S\Sir3SToolkit Documentation\source'))
 
 # -- Project information -----------------------------------------------------
 
