@@ -13,10 +13,5 @@ Welcome to Sir3SToolkit's documentation!
    examples
    functions
    releases
+   developers
    
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

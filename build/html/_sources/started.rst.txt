@@ -2,7 +2,7 @@ Getting Started
 ===============
 
 .. note::
-    This is a preliminary shortened draft of a documentation for the SIR 3S Toolkit. In the future, we hope to offer a separate documentation for the Toolkit just as complete and user-friendly as the current PT3S version or maybe something better. Also important to note is that the Toolkit is not publicly available yet and therefore this documentation is just a guideline for people with access.
+    This documentation is still WORK IN PROGRESS.
 
 Welcome to the Getting Started guide for the SIR 3S Toolkit! This guide is your first step towards understanding and utilizing the Toolkit. The purpose of the Toolkit and its applications will be explained.
 
@@ -21,44 +21,35 @@ Install Toolkit
 
 To install the Toolkit, follow these steps:
 
-1. **Install SIR 3S Version with Python Compatibility**: Copy `S:/Softwareentwicklung/SIR 3S/Sir3S-90/Release_Intern/2024-11-26_Release_Quebec(Alpha)/SirCalc-90-15-00-12_Quebec.alpha_x64.zip` and `S:/Softwareentwicklung/SIR 3S/Sir3S-90/Release_Intern/2024-11-26_Release_Quebec(Alpha)/SirGraf-90-15-00-04x64.ZIP` to your local machine preferably to `C:/3S/SIR 3S Entwicklung`
+1. **Get SIR 3S Version with Python Compatibility**: Copy ``S:/Softwareentwicklung/SIR 3S/Sir3S-90/Release_Intern/2024-11-26_Release_Quebec(Alpha)/SirCalc-90-15-00-12_Quebec.alpha_x64.zip`` and ``S:/Softwareentwicklung/SIR 3S/Sir3S-90/Release_Intern/2024-11-26_Release_Quebec(Alpha)/SirGraf-90-15-00-06x64.ZIP`` to your local machine preferably to ``C:/3S/SIR 3S Entwicklung``.
 
 2. **Unpack .zip files**: Unpack both zip-folders.
 
-3. **Get Common directory for SIR 3S 90**: Copy `S:/Softwareentwicklung/SIR 3S/Sir3S-90/Common` to `C:/3S/SIR 3S Entwicklung`
+3. **Get Common folder with Python for new SIR 3S Version**: Copy ``S:/Softwareentwicklung/SIR 3S/Sir3S-90/Common`` to your local machine preferably to ``C:/3S/SIR 3S Entwicklung``.
 
-4. **Get License for SIR 3S 90**: Copy `SIR3S-90.LIC` from `T:/SCRATCH/Jablonski` to `C:/3S/SIR 3S Entwicklung/Common`
+4. **Unpack .zip files**: Unpack the python zip folder in the Common folder. Make sure that ``C:/3S/SIR 3S Entwicklung/Common/Python312/python.exe`` exists.
 
-5. **Get Toolkit dll**: Copy `Sir3S_Toolkit.dll` from `T:/SCRATCH/Jablonski` to the `C:/3S/SIR 3S Entwicklung/SirGraf-90-15-00-04x64` directory in the new SIR 3S Installation
+5. **Get License for SIR 3S 90**: Copy ``SIR3S-90.LIC`` from ``T:/SCRATCH/Jablonski`` to ``C:/3S/SIR 3S Entwicklung/Common``.
 
-6. **Upgrade pip and install numpy**: Open a cmd and enter the following commands.
+6. **Upgrade pip and install numpy**: Open a cmd and enter the following commands:
 
    .. code-block:: bash
 
        cd "C:/3S/SIR 3S Entwicklung/SirGraf-90-15-00-04x64/Python312"
-       pip install --upgrade pip
-       pip install numpy
+       #python.exe -m pip install --upgrade pip (if needed)
+       python.exe -m pip install numpy
 
-7. **Get Current Work Package**: Copy the most recent work package version from `T:/SCRATCH/Nischal/Work_Packages/Toolkit_WorkPackage` to `C:/Users/User/3S` and rename it to `Toolkit_WorkPackage` (for uniformity and practicality)
+7. **Get Current Toolkit Version**: Copy the most recent version from ``T:/SCRATCH/PythonToolkit`` to ``C:/Users/User/3S`` and rename it to ``Toolkit_WorkPackage`` (for uniformity and practicality).
 
-8. **Install Toolkit in editable mode:** Open a cmd and enter the following commands.
+8. **Move dlls**: Copy files from ``C:/Users/User/3S/Toolkit_WorkPackage/DLLs`` to ``C:/3S/SIR 3S Entwicklung/SirGraf-90-15-00-06x64``.
+
+9. **Install Toolkit in editable mode:** Open a cmd and enter the following commands:
 
    .. code-block:: bash
 
        cd "C:/3S/SIR 3S Entwicklung/SirGraf-90-15-00-04x64/Python312"
        python.exe -m pip install -e "C:/Users/User/3S/Toolkit_WorkPackage"
 
-9. **Edit config.txt file:** Open `C:/Users/jablonski/3S/Toolkit_WorkPackage/PythonWrapperToolkit/Config.txt` and change the content to `C:/3S/SIR 3S Entwicklung/SirGraf-90-15-00-04x64`
+10. **Edit config.txt file:** Open ``C:/Users/jablonski/3S/Toolkit_WorkPackage/PythonWrapperToolkit/Config.txt`` and change the content to ``C:/3S/SIR 3S Entwicklung/SirGraf-90-15-00-04x64``.
 
-Now you should be good to go to use the Toolkit in the Python Console in your new SirGraf installation, but be aware that if you want to use the Toolkit in another python environment, you will have to install it there in editable mode as well.
-
-User Manual
------------
-
-To get a general understanding of how the Toolkit works and get an overview of the provided functions, refer to the following pdf.
-
-.. raw:: html
-
-    <a href="TOOLKIT_USER_MANUAL.pdf">Open PDF</a>
-    <br>
-|
+Now you should be good to go to use the Toolkit in the Python Console in your new SirGraf installation. Be aware that if you want to use the Toolkit in another Python environment, you will have to install it there in editable mode as well.
