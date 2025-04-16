@@ -11,14 +11,15 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 import os
 import sys
+from datetime import datetime
 sys.path.insert(0, os.path.abspath(r'C:\Users\jablonski\3S\Toolkit_WorkPackage\PythonWrapperToolkit'))
-
-
+sys.path.insert(0, os.path.abspath(r'C:\Users\jablonski\3S\Sir3SToolkit Documentation\source'))
 
 # -- Project information -----------------------------------------------------
 
 project = 'Sir3SToolkit'
-copyright = '2025, 3S Consult GmbH'
+current_year = datetime.now().year
+copyright = f'1986-{current_year}, 3S Consult GmbH'
 author = '3S Consult GmbH'
 
 # The full version, including alpha/beta/rc tags
@@ -30,7 +31,7 @@ release = 'alpha'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.todo', 'sphinx.ext.autodoc', 'sphinx.ext.coverage', 'sphinx.ext.viewcode', 'sphinx.ext.doctest','nbsphinx','sphinx_copybutton','sphinx.ext.extlinks']
+extensions = ['sphinx_preprocess','sphinx.ext.todo', 'sphinx.ext.autodoc', 'sphinx.ext.coverage', 'sphinx.ext.viewcode', 'sphinx.ext.doctest','nbsphinx','sphinx_copybutton','sphinx.ext.extlinks']
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
