@@ -56,7 +56,6 @@ To clone a GitHub repository to your local folder, follow these steps:
 
       git clone https://github.com/mj3s/Sir3SToolkit-Documentation
 
-Now, you are advised to following the steps of :ref:`install-editmode-label`.
 
 General GitHub Version Control Procedure
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
