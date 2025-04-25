@@ -35,7 +35,7 @@ To install the Toolkit, follow these steps:
 
    .. code-block:: bash
 
-       cd "C:/3S/SIR 3S Entwicklung/SirGraf-90-15-00-04x64/Python312"
+       cd "C:/3S/SIR 3S Entwicklung/SirGraf-90-15-00-06x64/Python312"
        #python.exe -m pip install --upgrade pip (if needed)
        python.exe -m pip install numpy
 
@@ -47,9 +47,17 @@ To install the Toolkit, follow these steps:
 
    .. code-block:: bash
 
-       cd "C:/3S/SIR 3S Entwicklung/SirGraf-90-15-00-04x64/Python312"
+       cd "C:/3S/SIR 3S Entwicklung/SirGraf-90-15-00-06x64/Python312"
        python.exe -m pip install -e "C:/Users/User/3S/Toolkit_WorkPackage"
 
-10. **Edit config.txt file:** Open ``C:/Users/jablonski/3S/Toolkit_WorkPackage/PythonWrapperToolkit/Config.txt`` and change the content to ``C:/3S/SIR 3S Entwicklung/SirGraf-90-15-00-04x64``.
+10. **Edit config.txt file:** Open ``C:/Users/jablonski/3S/Toolkit_WorkPackage/PythonWrapperToolkit/Config.txt`` and change the content to ``C:/3S/SIR 3S Entwicklung/SirGraf-90-15-00-06x64``.
 
 Now you should be good to go to use the Toolkit in the Python Console in your new SirGraf installation. Be aware that if you want to use the Toolkit in another Python environment, you will have to install it there in editable mode as well.
+
+11. **Install in other Environment:** Open a cmd in the desired environment and enter the following commands:
+
+   .. code-block:: bash
+
+       pip install -e "C:/Users/User/3S/Toolkit_WorkPackage"
+       
+If you encounter issues with that, located the python.exe file of the environment and follow step 9.
