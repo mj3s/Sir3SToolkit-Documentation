@@ -111,16 +111,15 @@ This example demonstrates how to set up a new SIR 3S model. Nodes and pipes are 
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">net</span><span class="o">.</span><span class="n">AddReference</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;C:\3S\SIR 3S Entwicklung\SirGraf-90-15-00-04x64\Sir3S_Repository.Interfaces.dll&quot;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">net</span><span class="o">.</span><span class="n">AddReference</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;C:\3S\SIR 3S Entwicklung\SirGraf-90-15-00-06x64\Sir3S_Repository.Interfaces.dll&quot;</span><span class="p">)</span> <span class="c1">#change to local path</span>
 </pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
-</pre></div>
+<div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
@@ -178,7 +177,7 @@ Initialization complete
     <span class="kn">from</span> <span class="nn">PT3S</span> <span class="kn">import</span> <span class="n">dxAndMxHelperFcts</span>
 <span class="k">except</span><span class="p">:</span>
     <span class="kn">import</span> <span class="nn">dxAndMxHelperFcts</span>
-<span class="n">dbFilename</span><span class="o">=</span><span class="s2">&quot;Toolkit_Example2&quot;</span>
+<span class="n">dbFilename</span><span class="o">=</span><span class="s2">&quot;Toolkit_Example1&quot;</span>
 <span class="n">dbFile</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">dxAndMxHelperFcts</span><span class="o">.</span><span class="vm">__file__</span><span class="p">))</span>
                     <span class="o">+</span><span class="s1">&#39;/Examples&#39;</span>
                     <span class="o">+</span><span class="s1">&#39;/Toolkit_Examples/&#39;</span>
@@ -197,7 +196,7 @@ Initialization complete
                            <span class="n">providerType</span><span class="o">=</span><span class="n">Interfaces</span><span class="o">.</span><span class="n">SirDBProviderType</span><span class="o">.</span><span class="n">SQLite</span><span class="p">,</span>
                            <span class="n">namedInstance</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
                            <span class="n">netType</span><span class="o">=</span><span class="n">Interfaces</span><span class="o">.</span><span class="n">NetworkType</span><span class="o">.</span><span class="n">DistrictHeating</span><span class="p">,</span>
-                           <span class="n">modelDescription</span><span class="o">=</span><span class="s2">&quot;Toolkit_Example2&quot;</span><span class="p">,</span>
+                           <span class="n">modelDescription</span><span class="o">=</span><span class="s2">&quot;Toolkit_Example1&quot;</span><span class="p">,</span>
                            <span class="n">userID</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
                            <span class="n">password</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
 </pre></div>
