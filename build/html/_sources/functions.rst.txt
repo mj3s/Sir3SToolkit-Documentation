@@ -1,20 +1,33 @@
 Functions
 =========
 
-WORK IN PROGRESS
+PythonWrapperToolkit
+--------------------
 
-.. automethod:: PythonWrapperToolkit.SIR3S_Model.StartTransaction
+.. automodule:: PythonWrapperToolkit
+   :members:
+   :undoc-members:
+   :private-members:
+   :special-members:
+   :show-inheritance:
 
-.. note::
-    All other functions will follow soon.
+SIR3S_Model Class
+"""""""""""""""""
 
-User Manual
------------
+.. autoclass:: PythonWrapperToolkit.SIR3S_Model
+   :members:
+   :undoc-members:
+   :inherited-members:
+   :show-inheritance:
+   :member-order: bysource
 
-To get a general understanding of how the Toolkit works and get an overview of the provided functions, refer to the following pdf.
+SIR3S_View Class
+""""""""""""""""
 
-.. raw:: html
-
-    <a href="TOOLKIT_USER_MANUAL.pdf">Open PDF</a>
-    <br>
-|
+.. autoclass:: PythonWrapperToolkit.SIR3S_View
+   :members:
+   :undoc-members:
+   :inherited-members:
+   :show-inheritance:
+   :member-order: bysource
+   
